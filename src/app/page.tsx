@@ -834,16 +834,16 @@ export default function HomePage() {
 
                 <div>
                   <label className="form-label text-xs text-slate-400">You Receive (Estimated PKR)</label>
-                  <div className="p-4 rounded-xl bg-gradient-to-r from-cyan-950/40 to-emerald-950/30 border border-brand-500/30 flex items-center justify-between">
-                    <div>
-                      <div className="text-3xl font-black text-white font-mono">
+                  <div className="p-4 rounded-xl bg-gradient-to-r from-cyan-950/40 to-emerald-950/30 border border-brand-500/30 flex items-center justify-between gap-4 overflow-hidden">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-2xl sm:text-3xl font-black text-white font-mono truncate" title={`₨ ${pkrConverted}`}>
                         ₨ {pkrConverted}
                       </div>
-                      <div className="text-xs text-slate-400 mt-1">
+                      <div className="text-xs text-slate-400 mt-1 truncate">
                         Rate: 1 {selectedCurrency} = {currentRate.toFixed(2)} PKR
                       </div>
                     </div>
-                    <span className="text-2xl font-black gradient-text">PKR</span>
+                    <span className="text-2xl font-black gradient-text flex-shrink-0">PKR</span>
                   </div>
                 </div>
               </div>
